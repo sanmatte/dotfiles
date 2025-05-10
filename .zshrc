@@ -1,5 +1,5 @@
 export PATH="$PATH:/opt/homebrew/bin/"
-export PATH="/opt/homebrew/bin:$PATH"
+export PATH="$PATH:$HOME/.local/scripts/"
 # export PATH=~/miniconda3/bin:$PATH
 export CLICOLOR=1
 export LSCOLORS=Exfxcxdxbxegedabagacad
@@ -35,3 +35,4 @@ fi
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 alias config='/usr/bin/git --git-dir=/Users/matteo/.cfg/ --work-tree=/Users/matteo'
 export XDG_CONFIG_HOME="$HOME/.config"
+bindkey -s ^f "tmux-sessionizer\n"
