@@ -212,6 +212,8 @@ return {
     ["Benji"] = ":bear:",
     ["Microsoft Outlook"] = ":microsoft_outlook:",
     ["ChatGPT"] = ":openai:",
-    ["default"] = ":default:"
+    ["default"] = ":default:",
+    ["Zen"] = ":zen_browser:",
+    ["iTerm2"] = ":iterm:"
 }
   
