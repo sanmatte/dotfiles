@@ -41,7 +41,7 @@ for i, workspace in ipairs(workspaces) do
         padding_right = 1,
         padding_left = 1,
         background = {
-            color = settings.items.colors.background,
+            color = selected and settings.items.colors.highlight_background or settings.items.colors.background,
             border_width = 1,
             height = settings.items.height,
             border_color = selected and settings.items.highlight_color(i) or settings.items.default_color(i)
@@ -109,6 +109,7 @@ for i, workspace in ipairs(workspaces) do
                 highlight = selected
             },
             background = {
+                color = selected and settings.items.colors.highlight_background or settings.items.colors.background,
                 border_color = selected and settings.items.highlight_color(i) or settings.items.default_color(i)
             }
         })

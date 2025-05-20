@@ -35,10 +35,11 @@ return {
             return colors.rainbow[workspace + 1]
         end,
         highlight_color = function(workspace)
-            return colors.yellow
+            return colors.white
         end,
         colors = {
-            background = colors.bg1
+            background = colors.bg1,
+            highlight_background = colors.black
         },
         corner_radius = 6
     },
