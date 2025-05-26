@@ -29,8 +29,8 @@ local cal = sbar.add("item", {
     padding_left = 1,
     padding_right = 1,
     background = {
-        color = colors.bg2,
-        border_color = colors.rainbow[#colors.rainbow],
+        color = colors.bg1,
+        border_color = colors.white, 
         border_width = 1
     }
 })
@@ -53,6 +53,6 @@ sbar.add("item", {
 cal:subscribe({"forced", "routine", "system_woke"}, function(env)
     cal:set({
         icon = "",
-        label = os.date("%m/%d %H:%M")
+        label = os.date("%d/%m %H:%M")
     })
 end)
