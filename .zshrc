@@ -4,6 +4,7 @@ export PATH="$PATH:$HOME/.local/scripts/"
 export CLICOLOR=1
 export LSCOLORS=Exfxcxdxbxegedabagacad
 export XDG_CONFIG_HOME="$HOME/.config"
+export PATH="$PATH:~/.cargo/bin/"
 # fix docker credentials error
 alias diomerda="rm -rf $HOME/.docker/config.json | echo 'Dio has successfully deleted ~/.docker/config.json'"
 alias docker="rm -rf $HOME/.docker/config.json | docker"
@@ -11,6 +12,11 @@ alias docker="rm -rf $HOME/.docker/config.json | docker"
 alias vim="nvim"
 alias vi="nvim"
 alias v="nvim"
+
+export JAVA_HOME=$(/usr/libexec/java_home -v 24)
+alias burp="cd ~/Burpsuite-Professional/ && ./burp"
+alias bbrowser="cd ~/Burpsuite-Professional/ && ./bbrowser"
+# alias java="/usr/bin/java"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -34,7 +40,7 @@ alias v="nvim"
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
 	eval "$(oh-my-posh init zsh --config ~/.config/ompthemes/night-owl.omp.json)"
 fi
-export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+# export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 alias config='/usr/bin/git --git-dir=/Users/matteo/.cfg/ --work-tree=/Users/matteo'
 export XDG_CONFIG_HOME="$HOME/.config"
 bindkey -s ^f "tmux-sessionizer\n"
