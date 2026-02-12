@@ -1,4 +1,4 @@
-This is a collection of my configurations on macos, linux and windows, one on each branch.
+This is a collection of my configurations on various operative systems, one on each branch.
 
 ### MacOs: 
 https://github.com/sanmatte/dotfiles/tree/macos
