@@ -2,6 +2,11 @@
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=5000
+autoload -Uz compinit
+compinit
+zmodload zsh/complist
+zstyle ':completion:*' menu select
+
 bindkey -e
 bindkey "^[[1;3C" forward-word
 bindkey "^[[1;3D" backward-word
