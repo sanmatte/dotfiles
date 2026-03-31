@@ -1,3 +1,8 @@
+autoload -Uz compinit
+compinit
+zmodload zsh/complist
+zstyle ':completion:*' menu select
+
 export PATH="$PATH:/opt/homebrew/bin/"
 export PATH="$PATH:$HOME/.local/scripts/"
 # export PATH=~/miniconda3/bin:$PATH
@@ -17,6 +22,11 @@ export JAVA_HOME=$(/usr/libexec/java_home -v 24)
 alias burp="cd ~/Burpsuite-Professional/ && ./burp"
 alias bbrowser="cd ~/Burpsuite-Professional/ && ./bbrowser"
 # alias java="/usr/bin/java"
+
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/emulator
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
