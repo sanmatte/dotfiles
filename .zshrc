@@ -40,3 +40,5 @@ else
 fi
 
 alias config='/usr/bin/git --git-dir=/var/home/matteo/.cfg/ --work-tree=/var/home/matteo'
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
