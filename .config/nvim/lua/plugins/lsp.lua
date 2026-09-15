@@ -23,7 +23,7 @@ return {
 			require('fidget').setup({})
 			require('mason').setup()
 			require('mason-lspconfig').setup({
-				ensure_installed = { 'eslint', 'ts_ls', 'rust_analyzer', 'lua_ls', 'clangd', 'volar', 'pylsp' },
+				ensure_installed = { 'eslint', 'ts_ls', 'lua_ls', 'clangd', 'volar', 'pylsp' },
 			})
 
 			require("mason-lspconfig").setup_handlers {
@@ -65,6 +65,10 @@ return {
 				end,
 			}
 			-- end mason_lspconfig setup handlers
+
+			require('lspconfig').rust_analyzer.setup {
+					capabilities = capabilities,
+			}
 			-- setup keymaps:
 			-- Global mappings.
 			-- See `:help vim.diagnostic.*` for documentation on any of the below functions
